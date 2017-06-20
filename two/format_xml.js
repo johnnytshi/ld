@@ -50,6 +50,9 @@ module.exports = {
             }
         });
 
+        // matcher should be empty
+        if (matcher.length > 0) self._error();
+
         return formatted_xml;
     }
 };

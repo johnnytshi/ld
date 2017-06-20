@@ -39,4 +39,15 @@ describe('Test string to XML', function() {
             );
         });
     });
+
+    describe('format()', function() {
+        it('missing element', function() {
+            assert.throws(
+                () => {
+                    formatXML.format('<a><b></b>');
+                },
+                /Invalid xml/, 'did not throw with expected message'
+            );
+        });
+    });
 });
