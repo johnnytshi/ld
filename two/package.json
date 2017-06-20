@@ -1,0 +1,12 @@
+{
+  "name": "two",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+      "start": "node app.js",
+      "test": "../node_modules/mocha/bin/mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
