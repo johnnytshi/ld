@@ -1,0 +1,7 @@
+SELECT Dogs.*,
+       AVG(Bones.rating) AS average_bones_rating
+       COUNT(Bones.id) AS bones_count
+  FROM Dogs
+  JOIN Bones
+    ON Dogs.id = Bones.dog_id
+ GROUP BY Dogs.id
